@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ödeme Bilgileri</title>
+<style>
+    body {
+    background-image: url('netfilix.jpg'); /* Arka plan resmi dosyasının adı */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* Ödeme sayfası stil */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0.4); /* Şeffaf siyah arka plan */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 0px solid #ccc;
+    border-radius: 0px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #cc0a10;
+}
+
+/* Link stil */
+a {
+    color: #000000; /* Netflix mavi rengi */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Ödeme Bilgileri</h1>
+    <form id="paymentForm" onsubmit="return redirectToSuccessPage()">
+        <label for="cardNumber">Kredi Kartı Numarası:</label>
+        <input type="text" id="cardNumber" placeholder="**** **** **** ****" required>
+
+        <label for="expiryDate">Son Kullanma Tarihi:</label>
+        <input type="text" id="expiryDate" placeholder="MM/YY" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" placeholder="***" required>
+
+        <label for="installments">Taksit Sayısı:</label>
+        <select id="installments">
+            <option value="1">Tek Çekim</option>
+            <option value="2">2 Taksit</option>
+            <option value="3">3 Taksit</option>
+            <option value="4">4 Taksit</option>
+            <option value="4">5 Taksit</option>
+            <option value="4">6 Taksit</option>
+            <option value="4">7 Taksit</option>
+            <option value="4">8 Taksit</option>
+        </select>
+
+        <button type="submit">Ödeme Yap</button>
+    </form>
+</div>
+
+<script>
+    function redirectToSuccessPage() {
+        // Ödeme başarılı sayfasına yönlendirme
+        window.location.href = "success.html"; // Başarılı sayfanın dosya adını buraya yazın
+        return false; // Formun varsayılan işlemi durdur
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dekont</title>
+<style>
+    body {
+    background-image: url('netfilix.jpg'); /* Arka plan resmi dosyasının adı */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+    /* Ortak stiller */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:rgba(255, 255, 255, 0.6); /* Şeffaf siyah arka plan */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.back-link:hover {
+    color: #00ff04;
+}
+
+/* Receipt sayfası stil */
+.receipt-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.receipt-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+</style>
+</head>
+<body>
+
+<div class="container receipt-container">
+    <h1>Dekont</h1>
+    <img src="dekont.jpg" alt="Ödeme Dekontu" class="receipt-image">
+    <a href="index.html" class="back-link">Ana Sayfaya Geri Dön</a>
+    <a href="success.html" class="back-link">Ödeme Başarılı Sayfasına Geri Dön</a>
+</div>
+
+</body>
+</html>

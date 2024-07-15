@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netflix  Abonelik Planları</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+    /* Netflix arka plan stil */
+body {
+    background-image: url('netfilix.jpg'); /* Arka plan resmi dosyasının adı */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+    .container {
+        display: flex;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color:rgba(255, 255, 255, 0.7); /* Şeffaf siyah arka plan */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+        text-align: center;
+    }
+    /* Abonelik planları için temel stiller */
+.plan-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plan {
+    flex: 1 1 300px;
+    max-width: 300px;
+    margin: 10px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+}
+
+.plan h3 {
+    margin-top: 0;
+    color: #000000;
+}
+
+.plan p {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.plan button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.plan button:hover {
+    background-color: #cc0000;
+}
+</style>
+</head>
+<body>
+    <h1>Netflix Abonelik Planları</h1>
+<div class="container">
+   
+
+    <div class="plan">
+        <h3>Temel Plan</h3>
+        <p>SD Kalitesinde İzleme</p>
+        <p>1 Cihazda İzleme</p>
+        <p>₺29.99/ay</p>
+        <button onclick="redirectToPayment()">Abone Ol</button>
+    </div>
+
+    <div class="plan">
+        <h3>Standart Plan</h3>
+        <p>HD Kalitesinde İzleme</p>
+        <p>2 Cihazda İzleme</p>
+        <p>₺39.99/ay</p>
+        <button onclick="redirectToPayment()">Abone Ol</button>
+    </div>
+
+    <div class="plan">
+        <h3>Premium Plan</h3>
+        <p>Ultra HD Kalitesinde İzleme</p>
+        <p>4 Cihazda İzleme</p>
+        <p>₺49.99/ay</p>
+        <button onclick="redirectToPayment()">Abone Ol</button>
+    </div>
+</div>
+
+<script>
+    function redirectToPayment() {
+        // Ödeme sayfasına yönlendirme
+        window.location.href = "payment.html"; // Ödeme sayfasının dosya adını buraya yazın
+    }
+</script>
+
+</body>
+</html>

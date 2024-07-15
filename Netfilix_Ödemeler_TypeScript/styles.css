@@ -1,0 +1,29 @@
+
+
+/* Sayfa Özel Stilleri */
+.success-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.success-icon {
+    font-size: 48px;
+    color: #28a745; /* Yeşil renk */
+}
+
+.success-message {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    color: #28a745; 
+}
